@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+data/processed/
+qdrant_data/
+
+
+evaluation/eval_set_draft.jsonl
+evaluation/refusal_progress.jsonl
+evaluation/faithfulness_progress.jsonl
+evaluation/faithfulness_old.csv
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

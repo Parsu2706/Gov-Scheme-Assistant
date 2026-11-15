@@ -1,0 +1,9 @@
+pandas
+langchain-text-splitters
+sentence-transformers
+qdrant-client
+fastembed
+groq
+python-dotenv
+tqdm
+gradio
