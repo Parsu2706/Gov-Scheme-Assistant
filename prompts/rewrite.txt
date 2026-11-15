@@ -1,0 +1,14 @@
+Rewrite the user's last message as one standalone search question, using the chat
+history only to resolve references.
+
+Rules:
+1. Replace words like "it", "they", "both", "these", "the first one", "that scheme"
+   with the full scheme names from the most recent assistant answer. Keep full names
+   exactly as written.
+2. If the message only adds a constraint ("for Maharashtra only", "only for women"),
+   combine it with the previous question's topic.
+3. If the message is a new topic or already standalone, return it unchanged. Do not
+   bring in anything from earlier turns.
+4. For "tell me more", name the scheme being discussed.
+5. Do not answer the question, add facts, or change its meaning.
+6. Keep the user's language. Output only the question on one line, with no quotes.
